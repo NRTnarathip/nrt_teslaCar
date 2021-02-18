@@ -16,7 +16,8 @@ client_scripts {
     '@es_extended/locale.lua',  
     'client/client.lua',
     'config.lua',
-    'functions.lua'
+    'functions.lua',
+    'locales/en.lua'
 }
 
 dependencies {

@@ -1,4 +1,5 @@
 Config = {}
+Config.Locale = 'en'
 Config.Markers = {
     carCharger = {
         type = 1, --MarkerTypeHorizontalSplitArrowCircle
@@ -15,5 +16,10 @@ Config.Blips = {
         scale = 1.0,
         color = 28,
         description = 'Tesla Car'
+    }
+}
+Config.ListVehicleElectric = {
+    Neon = {
+        betteryType = 'Lithium_Ion'
     }
 }
