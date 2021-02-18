@@ -17,7 +17,8 @@ client_scripts {
     'client/client.lua',
     'config.lua',
     'functions.lua',
-    'locales/en.lua'
+    'locales/en.lua',
+    'vehicle.lua'
 }
 
 dependencies {

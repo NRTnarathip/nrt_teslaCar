@@ -25,6 +25,19 @@ function alert(msg)
     AddTextComponentString(msg)
     DisplayHelpTextFromStringLabel(0, 0, 1, -1)
 end
+function VehicleEngine(vehiclePed)
+    local vhFuel = GetVehicleFuelLevel(GetVehiclePedIsIn(playerPed, false))
+    if vhFuel == 0.0 then
+        if GetIsVehicleEngineRunning(vehiclePed) then
+            print('off engine')
+            SetVehicleEngineOn(vehiclePed, false, false, true)
+        end
+    end
+    if IsControlJustPressed(0,58) then
+        print('start engine')
+        SetVehicleEngineOn(vehiclePed, true, false, true)
+    end
+end
 function AddFuelVehicle(rowMarkers, vehiclePed)
     local vehicleName = GetLabelText(GetDisplayNameFromVehicleModel(GetEntityModel(vehiclePed)))
     for rowTable, rowVehicle in pairs(Config.ListVehicleElectric) do
